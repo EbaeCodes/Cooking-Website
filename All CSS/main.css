@@ -679,11 +679,10 @@ Contact page
 Tags page
 ======================
 */
-.tags-wrapper {
+#tags-wrapper {
     display: grid;
     gap: 2rem;
     padding-bottom: 3rem;
-
 }
 
 .tag {
@@ -699,7 +698,8 @@ Tags page
     background: var(--primary-500);
 }
 
-.tag h5 .tag p {
+.tag h5,
+.tag p {
     margin-bottom: 0;
 
 }
@@ -708,18 +708,13 @@ Tags page
     font-weight: 600;
 }
 
-@media screen and(min-width:576px) {
-    .tags-wrapper {
-        grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 900px) {
+    #tags-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
-@media screen and(min-width:992px) {
-    .tags-wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-}
 
 /*
 ======================
